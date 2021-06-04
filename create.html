@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini YouTube</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="create.css">
+</head>
+<body>
+    <div class="miniYouTube_heading">
+        
+        <div class="tenor-gif-embed" data-postid="18299847" data-share-method="host" data-width="3.5rem" data-aspect-ratio="1.0"></div>
+        <script type="text/javascript"  src="https://tenor.com/embed.js"></script>
+        <div class="heading">Mini YouTube</div>
+        <div class="current_info_container">
+           
+            <div class="Download_container">
+                <span class="material-icons" id="backToMain_bt">
+                        arrow_back
+                    </span>
+                <a href="gallery.html"><i class="fas fa-cloud-download-alt"></i></a>
+            </div>
+            <div class="date_container">
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="video_shoot_container">
+        <video autoplay style="transform: scale(1);"></video>
+      </div>
+
+         <!-- recording and picture click button -->
+    <button id="record-video"><div id="record-div"></div></button>
+    
+    <i class="fas fa-folder-open open menu_icon "></i>
+    <input type="file" class="file-taker" style="display: none;">
+    
+
+    <script src="index.Db.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="create.js" defer></script>
+</body>
+</html>

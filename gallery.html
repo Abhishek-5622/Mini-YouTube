@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini YouTube</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+   
+    <div class="gallery_heading_container">
+        <div class="back_icon">
+            <i class="fas fa-arrow-circle-left"></i>
+        </div>
+        <div class="gallery_heading">
+            DOWNLOADS...
+        </div>
+    </div>
+
+    <div class="gallery_house">
+
+            
+    </div>
+
+
+
+    <!-- add script file  -->
+    <script src='index.Db.js'></script>
+    <script>
+        //set timeout => sometime db is not load completely
+        setTimeout(function(){
+            //call view media function
+            viewMedia();
+        },100)
+
+          let backBtn = document.querySelector('.back_icon');
+          backBtn.addEventListener('click',function(){
+          location.assign('index.html');
+      })
+    
+    </script>
+</body>
+</html>

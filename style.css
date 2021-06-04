@@ -1,0 +1,183 @@
+/* *******************************************************CSS CODE********************************************************** */
+
+/* ************************************Basic setup******************************** */
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ******************************************************************************** */
+
+.miniYouTube_heading{
+    background-color: black;
+    width: 100vw;
+    height: 4.5rem;
+    display: flex;
+    align-items: center;
+}
+.tenor-gif-embed{
+    margin-left: 2rem;
+    
+}
+.heading{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    margin-left: 0.5rem;
+}
+.main_conatiner{
+    width: 100vw;
+    height: calc( 100vh - 4.5rem );
+    display: flex;
+    overflow-x: hidden;
+    
+    
+}
+.video_container{
+    width: 74vw;
+    height: 100%;
+    
+    
+}
+.category_container{
+    width: 25vw;
+    height: 100%;
+    background-color: lightgrey;
+    overflow: auto;
+
+}
+.main_video{
+    width: 97%;
+    margin-left: 1.2rem;
+     height: 75%;
+     margin-top: 1.2rem;
+}
+.video{
+    border: 2px solid black;
+}
+.date_container{
+    color: cornsilk;
+}
+
+.date_container{
+    margin-left: 70vw;
+}
+.history_container{
+    height: 2rem;
+    /* background-color: rgb(175, 233, 235); */
+    display: flex;
+    justify-content: space-between;
+}
+
+.backward{
+    margin-left: 0.7rem;
+    margin-top: 0.2rem;
+    font-size: 1.6rem; 
+}
+
+.forward{
+    margin-right: 0.7rem;
+    margin-top: 0.2rem;
+    font-size: 1.6rem; 
+}
+.video_feature{
+    display: flex;
+}
+.fa-heart{
+    font-size: 1.9rem;
+    margin-left: 2.5rem;
+}
+.fa-comment{
+    font-size: 1.9rem;
+    margin-left: 2.5rem;
+}
+.fa-download{
+    font-size: 1.9rem;
+    margin-left: 2.5rem;
+}
+.fa-pinterest{
+    font-size: 1.9rem;
+    margin-left: 2.5rem;
+    
+}
+.playspeed_container{
+    display: none;
+    position: fixed;
+    top:77vh;
+    left: 10vw;
+    border: 1px solid black;
+    width: 7rem;
+    background-color: blanchedalmond;
+    border-radius: 10%;
+}
+#category{
+    width: 90%;
+    height: 5vh;
+    margin-left: 1rem;
+    margin-top: 1rem;
+
+}
+.container{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: white;
+    width: 90%;
+    height: 5rem;
+    display: flex;
+}
+
+.vid{
+    width:5rem;
+    height: 5rem;
+    margin-top: 0.3rem;
+    margin-left: 0.7rem;
+}
+
+
+.detail
+{
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    
+}
+
+.all_video_container{
+    margin-bottom: 1rem;
+}
+.Download_container{
+    width: 5rem;
+    height: 2.5rem;
+    color: white;
+    margin-left: 62vw;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+    
+}
+.fa-cloud-download-alt{
+    font-size: 2rem;
+    color: lightgrey
+}
+#creator_bt{
+    color: rgb(223, 160, 93);
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+span{
+    display: block;
+}
+.video_heading{
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+.para{
+    margin-left: 1.7rem;
+    font-size: 1rem;
+}
+/* **************************************************** */

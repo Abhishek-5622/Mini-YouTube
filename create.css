@@ -1,0 +1,82 @@
+/* *******************************************************CSS CODE********************************************************** */
+
+/* ************************************Basic setup******************************** */
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ******************************************************************************** */
+
+
+#backToMain_bt
+{
+    color: rgb(247, 195, 247);
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+#record-video {
+    /* the video element is going to cover entire screen so we have removed this button from normal flow by position fixed  */
+    position: fixed;
+    right: 6rem;
+    top: 36vh;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: black;
+    border: 8px solid white;
+  }
+  
+  #record-div{
+    height:70%;
+    width:80%;
+    margin:auto;
+    border-radius: 50%;;
+    background-color: red;
+  }
+
+ 
+.video_shoot_container {
+    height: 100vh;
+    width: 100vw;
+    /* when we give video element 100% height and width of its parent so it overflow and hence overflow hidden; */
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  video{
+      height: 100%;
+      width: 100%;
+  }
+
+
+  .recording-animation{
+    animation: shrinkInOut 0.8s infinite;
+  }
+  
+  /* animation */
+  @keyframes shrinkInOut {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
+  }
+  
+.open{
+    position: fixed;
+    top:55vh;
+    right:7rem;
+    font-size: 4rem;
+    color: white;
+    border: 1px solid black;
+}

@@ -1,0 +1,89 @@
+/* *******************************************************CSS CODE********************************************************** */
+
+/* ************************************Basic setup******************************** */
+body {
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* ******************************************************************************** */
+.gallery_heading_container{
+    display: flex;
+background-color: black;
+}
+.back_icon{
+    height:4rem;
+
+    
+}
+.fas{
+    font-size: 3rem;
+    margin-left: 2rem;
+    margin-top: 0.5rem;
+    color: silver;
+}
+.gallery_heading{
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    margin: 0 auto;
+    color: red;
+    font-size: 3rem;
+}
+
+.gallery_house{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(207, 244, 245);
+    height: 100vh;
+    width: 100vw;
+}
+.gallery-vid-container {
+    width: 15rem;
+    height: 14rem;
+    margin: 1.5rem;
+    background-color: cornsilk;
+    border: 4px solid black;
+}
+.b_container
+{
+    display: flex;
+    
+    height: 3rem;
+    width: 100%;
+}
+
+.view_video {
+    width: 90%;
+    height: 9rem;
+    margin-left: 0.7rem;
+    margin-top: -0.5rem;
+}
+.remove_bar{
+    width: 100%;
+    height: 1.2rem;
+    
+}
+.fa-times-circle{
+font-size: 1.2rem;
+color: black;
+display: flex;
+justify-content: flex-end;
+margin-right: 0.3rem ;
+margin-top: 0.2rem;
+}
+.gallery-download-button{
+    
+}
+.fa-download{
+size:1rem;
+}
+.fa-download:hover{
+    color: black;
+    }
+.fa-times-circle:hover{
+    color: red;
+}
