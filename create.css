@@ -11,7 +11,6 @@ body {
 
 /* ******************************************************************************** */
 
-
 #backToMain_bt
 {
     color: rgb(247, 195, 247);
@@ -22,14 +21,14 @@ body {
 #record-video {
     /* the video element is going to cover entire screen so we have removed this button from normal flow by position fixed  */
     position: fixed;
-    right: 6rem;
-    top: 36vh;
-    height: 6rem;
-    width: 6rem;
+    right: 48vw;
+    top: 81vh;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     background-color: black;
     border: 8px solid white;
-  }
+}
   
   #record-div{
     height:70%;
@@ -39,7 +38,6 @@ body {
     background-color: red;
   }
 
- 
 .video_shoot_container {
     height: 100vh;
     width: 100vw;
@@ -52,7 +50,6 @@ body {
       height: 100%;
       width: 100%;
   }
-
 
   .recording-animation{
     animation: shrinkInOut 0.8s infinite;
@@ -74,9 +71,19 @@ body {
   
 .open{
     position: fixed;
-    top:55vh;
-    right:7rem;
+    top:81vh;
+    right:57vw;
     font-size: 4rem;
     color: white;
-    border: 1px solid black;
+}
+
+#download2{
+  position: fixed;
+  top:81vh;
+  right:40vw;
+  color: white;
+}
+
+.down{
+  font-size: 3.7rem;
 }

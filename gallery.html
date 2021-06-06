@@ -1,3 +1,5 @@
+<!-- *******************************************HTML CODE ***************************************** -->
+<!--  Html code for gallery-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +7,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini YouTube</title>
+    
+    <!-- Add css link to add different icon -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- custom css -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
     
 </head>
 <body>
 
-   
-    <div class="gallery_heading_container">
-        <div class="back_icon">
-            <i class="fas fa-arrow-circle-left"></i>
-        </div>
-        <div class="gallery_heading">
-            DOWNLOADS...
+    <!-- heading -->
+    <div class="miniYouTube_heading">
+        <!-- add gif -->
+        <div class="tenor-gif-embed" data-postid="18299847" data-share-method="host" data-width="3.5rem" data-aspect-ratio="1.0"></div>
+        <script type="text/javascript"  src="https://tenor.com/embed.js"></script>
+        <!-- heading -->
+        <div class="heading">Mini YouTube</div>
+        <!-- current info -->
+        <div class="current_info_container">
+            <!-- download container -->
+            <div class="Download_container">
+                <!-- back icon > it goes to  -->
+                <div class="back_icon">
+                    <!-- add icon -->
+                    <i class="fas fa-arrow-circle-left"></i>
+                </div>
+                <!-- creator mode icon add -->
+                <span class="material-icons" id="creator_bt">
+                    video_call
+                    </span>
+                    
+            </div>
+            <!-- date container current date -->
+            <div class="date_container">
+                
+            </div> 
         </div>
     </div>
 
+    <!-- gallery house contains downloaded video -->
     <div class="gallery_house">
 
             
@@ -31,17 +61,33 @@
 
     <!-- add script file  -->
     <script src='index.Db.js'></script>
+    <script src="script.js" ></script>
+    
     <script>
         //set timeout => sometime db is not load completely
         setTimeout(function(){
             //call view media function
             viewMedia();
         },100)
-
+        
+        //store reference
           let backBtn = document.querySelector('.back_icon');
+          let creatorBtn = document.querySelector('#creator_bt');
+
+          //click on back btn 
           backBtn.addEventListener('click',function(){
+              //go to index.html
           location.assign('index.html');
       })
+
+      //click on creator mode btn
+      creatorBtn.addEventListener('click',function(){
+          //go to create.html
+          location.assign('create.html');
+      })
+      
+      
+
     
     </script>
 </body>

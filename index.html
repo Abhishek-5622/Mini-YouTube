@@ -1,3 +1,6 @@
+<!-- **************************************************HTML CODE **********************************************************
+#Main page Html code -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,34 +8,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini YouTube</title>
+
+    <!-- Add css link to add different icon  and font family-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <!-- Add css link to add different icon -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<!-- Add Custom css -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
+    <!-- heading container -->
     <div class="miniYouTube_heading">
-        
+        <!-- Add Youtube gif -->
         <div class="tenor-gif-embed" data-postid="18299847" data-share-method="host" data-width="3.5rem" data-aspect-ratio="1.0"></div>
         <script type="text/javascript"  src="https://tenor.com/embed.js"></script>
-        
-        
+        <!-- heading -->
         <div class="heading">Mini YouTube</div>
+        <!-- info container => Date , creator mode,download -->
         <div class="current_info_container">
-            <!-- <div class="creator_btn_container">
-                
-            </div> -->
-           
+            <!-- download icon container -->
             <div class="Download_container">
+                <!-- add creator mode icon -->
                 <span class="material-icons" id="creator_bt">
                     video_call
                     </span>
+                    <!-- add anchore tag and  download icon-->
                 <a href="gallery.html"><i class="fas fa-cloud-download-alt"></i></a>
             </div>
+            <!-- date container that contains currrent date -->
             <div class="date_container">
                 
             </div>
@@ -40,19 +46,21 @@
         </div>
     </div>
 
+    <!-- main Container -->
     <div class="main_conatiner">
+        <!-- video container  -->
         <div class="video_container">
-            <!-- <div class="history_container">
-    <div class="backward"><i class="fas fa-arrow-circle-left"></i></div>
-    <div class="forward"><i class="fas fa-arrow-circle-right"></i></div>
-            </div> -->
+            <!-- video  -->
             <div class="video">
-                <video class="main_video" src="video/pep1.mp4" autoplay controls></video>
+                <!-- video tag -->
+                <video class="main_video" src="video/palindrome.mp4" autoplay controls></video>
+                <!-- video features => like , comment , playspeed , download -->
                 <div class="video_feature">
                     <div class="like"><i class="fas fa-heart"></i></div>
-                    <div class="comment"><i class="fas fa-comment"></i></div>
+                    <div class="comment"><a href="#com_section"><i class="fas fa-comment"></i></a></div>
                     <div class="playspeed_icon"><i class="fab fa-pinterest"></i>
                     </div>
+                    <!-- playspeed container => it appears when we click on playspeed btn -->
                     <div class="playspeed_container">
                         <center><b>Play Speed</b></center>
                         <b><input type="radio" id="s0" name="speed" value="0.25" class="r1">
@@ -68,48 +76,275 @@
                         <input type="radio" id="s5" name="speed" value="3" class="r1">
                         <label for="speed">4</label></b>
                     </div>
+
                     <div class="download"><i class="fas fa-download"></i></div>
                 </div>
-         <div class="video_heading"><b>Recursion-Print Decreasing</b></div>
+
+                <!-- video heading  -->
+         <div class="video_heading"><b>Palindrome SubString</b></div>
+         <!-- video description -->
          <p class="para">
-             When function call itself is called recursion.Recursion is basically combination of faith and expectation.
+            Solution video Palindrome substring question.
          </p>
-         <div class="description">
-                </div>
+         <section id="com_section">
+ <!-- comment box -->
+ <div class="comment_box">
+    <div class="comment_headng">
+       Comment
+    </div>
+    <!-- coment type   -->
+    <div class="comment_container">
+       <div contenteditable="true" class=comment_description>
+   
+       </div>
+    </div>
+       </div>
+         </section>
+        
             </div>
         </div>
+
+        <!-- category container -->
         <div class="category_container">
+            <!-- drop down  -->
             <div class="input_div">
                 <label for="category"></label>
                 <select name="category" id="category">
                     <option value="all">All</option>
                   <option value="coding">Coding</option>
                   <option value="comedy">Comedy</option>
-                  <option value="song">song</option>
-                  <option value="game">game</option>
+                  <option value="song">Song</option>
+                  <option value="cooking">Cooking</option>
                   
                 </select>
             </div>
             <hr noshade>
 
+            <!-- //////////// category video container //////////////////// -->
+            <!-- video coantiner -->
             <div class="all_video_container">
+                <!-- container -->
                 <div category="coding" class="container">
+                    <!-- video tag -->
                     <video class="vid" src="video/pep1.mp4" ></video>
+                    <!-- detail container -->
                 <div class="detail">
+                    <!-- heading -->
                     <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
+                    <!-- details -->
+                    <div>When function call itself is called recursion</div>
                 </div>
                 </div>
             </div>
            
-            
-
             <div class="all_video_container">
                 <div category="coding" class="container">
                     <video class="vid" src="video/dp.mp4" ></video>
+                    <div class="detail">
+                        <div class="head"><b>Dynamic Programming</b></div>
+                        <div>Dynamic Programming is a controlled recursion.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/What  actually is JavaScript.mp4" ></video>
                 <div class="detail">
-                    <div class="head"><b>Dynamic Programming</b></div>
-                    <div>Dynamic Programming is a controlled recursion.</div>
+                    <div class="head"><b>What  actually is JavaScript</b></div>
+                    <div>Common Interview Questions</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/Harami CAB Driver.mp4" ></video>
+                    <div class="detail">
+                        <div class="head"><b>Harami CAB Driver</b></div>
+                        <div>Comedy Video By Ashish Chanchlani</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Gaddi Pichhe Naa .mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Gaddi Pichhe Naa</b></div>
+                    <div>By- Khan Bhaini | Shipra Goyal</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Ghalat Fehmi.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Ghalat Fehmi</b></div>
+                    <div>By- JalRaj | Asim Azhar</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/introToJS.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Introduction to JavaScript</b></div>
+                    <div>Basis Concepts of javascript</div>
+                </div>
+                </div>
+            </div>
+
+           
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Kangana Tera Ni .mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Kangana Tera Ni</b></div>
+                    <div>By- ABEER ARORA</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Lehanga.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Lehanga</b></div>
+                    <div>By- Jass Manak</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/palindrome.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Palindrome SubString</b></div>
+                    <div>Solution video Palindrome substring question</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Prada.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Prada</b></div>
+                    <div>By - JASS MANAK,Satti Dhillon</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="song" class="container">
+                    <video class="vid" src="video/Tu_Hi_Hai_Aashiqui.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Tu_Hi_Hai_Aashiqui</b></div>
+                    <div>By -Arijit Singh , Palak Muchhal</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/excel.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Excel Introduction</b></div>
+                    <div>Basic structure of Excel</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/Types Of People During Indian Wedding.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Types Of People During Indian Wedding</b></div>
+                    <div>By-Ashish Chanchlani.</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/Roommate.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Roommate</b></div>
+                    <div>By- Anubhav Singh Bassi</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="cooking" class="container">
+                    <video class="vid" src="video/Chilli Potatoes Recipe .mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Chilli Potatoes Recipe</b></div>
+                    <div>By- Aman Bhatia</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/pep1.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Recursion-Print increasing</b></div>
+                    <div>When function call itself is called recursion.</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/Mera Baap Mahaan.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Mera Baap Mahaan</b></div>
+                    <div>By- Ashish Chanchlani | Kunal Chhabhria</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="cooking" class="container">
+                    <video class="vid" src="video/gulab jamun recipe .mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>gulab jamun recipe</b></div>
+                    <div>By-cookingshooking</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="coding" class="container">
+                    <video class="vid" src="video/How the Web Works _ Dev Interview Common Question.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>How the Web Works Dev</b></div>
+                    <div>Interview Common Question.</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="cooking" class="container">
+                    <video class="vid" src="video/Instant Jalebi  Jalebi Recipe.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Instant Jalebi  Jalebi Recipe</b></div>
+                    <div>By- momsmagic tastyfood</div>
+                </div>
+                </div>
+            </div>
+
+            <div class="all_video_container">
+                <div category="cooking" class="container">
+                    <video class="vid" src="video/Make Soft  Spongy Dhokla.mp4" ></video>
+                <div class="detail">
+                    <div class="head"><b>Make Soft  Spongy Dhokla</b></div>
+                    <div>By- bharatzkitchen</div>
                 </div>
                 </div>
             </div>
@@ -117,110 +352,46 @@
 
             <div class="all_video_container">
                 <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
+                    <video class="vid" src="video/Remove prime numbers from Arraylist  Strings and Arraylists.mp4" ></video>
                 <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
+                    <div class="head"><b>Remove prime numbers from Arraylist</b></div>
+                    <div>Introduction to ArrayList . Remove prime number</div>
                 </div>
                 </div>
             </div>
 
-            
+
             <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/The Mummy.mp4" ></video>
                 <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
+                    <div class="head"><b>The Mummy</b></div>
+                    <div>By- Ashish Chanchlani</div>
                 </div>
                 </div>
             </div>
 
+
             <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
+                <div category="comedy" class="container">
+                    <video class="vid" src="video/Mera Baap Mahaan.mp4" ></video>
                 <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
+                    <div class="head"><b>Mera Baap Mahaan</b></div>
+                    <div>By- Ashish Chanchlani | Kunal Chhabhria</div>
                 </div>
                 </div>
             </div>
 
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
 
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
-
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
-
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
-
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
-
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
-
-            <div class="all_video_container">
-                <div category="coding" class="container">
-                    <video class="vid" src="video/pep1.mp4" ></video>
-                <div class="detail">
-                    <div class="head"><b>Recursion-Print Decreasing</b></div>
-                    <div>When function call itself is called recursion.Recursion is basically combination of faith and expectation.</div>
-                </div>
-                </div>
-            </div>
+           
         </div>
+
+</div>
 
     </div>
 
      <!-- add scipt file -->
- <script src="index.Db.js"></script>
+    <script src="index.Db.js"></script>
     <script src="script.js" defer></script>
   
   
